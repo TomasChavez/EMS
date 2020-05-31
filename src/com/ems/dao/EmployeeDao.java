@@ -1,5 +1,9 @@
 package com.ems.dao;
 
-public class EmployeeDao {
+import java.util.List;
 
+import com.ems.model.Employee;
+
+public interface EmployeeDao {
+	List<Employee> getAllEmployees();
 }
