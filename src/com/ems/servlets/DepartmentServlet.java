@@ -16,7 +16,7 @@ import com.ems.model.Department;
 /**
  * Servlet implementation class DepartmentServlet
  */
-@WebServlet("/DepartmentServlet")
+@WebServlet (description = "This servlet is the main interface into the Departments ", urlPatterns = { "/Department" })
 public class DepartmentServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

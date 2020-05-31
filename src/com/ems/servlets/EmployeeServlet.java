@@ -11,13 +11,12 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.ems.dao.DaoUtilities;
 import com.ems.dao.EmployeeDao;
-import com.ems.dao.EmployeeDaoImpl;
 import com.ems.model.Employee;
 
 /**
  * Servlet implementation class EmployeeServlet
  */
-@WebServlet("/EmployeeServlet")
+@WebServlet("/Employee")
 public class EmployeeServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

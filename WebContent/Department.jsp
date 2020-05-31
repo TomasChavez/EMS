@@ -10,8 +10,9 @@
 <title>Department Page</title>
 </head>
 <body>
-	<table>
-		<thead>
+<jsp:include page="./header.html"></jsp:include>
+	<table class="table table-hover table-striped table-hover ">
+		<thead class="thead-dark" >
 			<tr>
 				<td>Department ID</td>
 				<td>Department Name</td>

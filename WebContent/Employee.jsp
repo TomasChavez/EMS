@@ -7,10 +7,15 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Employee Page</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
 </head>
 <body>
-	<table>
-		<thead>
+	<jsp:include page="./header.html"></jsp:include>
+	<table class="table table-hover table-striped table-hover ">
+		<thead class="thead-dark" >
 			<tr>
 				<td>Employee ID</td>
 				<td>First Name</td>
@@ -19,7 +24,7 @@
 			</tr>
 		</thead>
 		<tbody>
-			<c:forEach var ="emp" items="${employees}">
+			<c:forEach var="emp" items="${employees}">
 				<tr>
 					<td><c:out value="${emp.employeeId}" /></td>
 					<td><c:out value="${emp.firstName}" /></td>
